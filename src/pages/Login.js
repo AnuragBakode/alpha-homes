@@ -13,13 +13,13 @@ function Login() {
           <div className="flex items-center h-full px-20 bg-gray-900 bg-opacity-40">
             <div>
               <h2 className="text-2xl font-bold text-white sm:text-3xl">
-                Meraki UI
+                Alpha Homes
               </h2>
 
               <p className="max-w-xl mt-3 text-gray-300">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
-                autem ipsa, nulla laboriosam dolores, repellendus perferendis
-                libero suscipit nam temporibus molestiae
+                AlphaHome is trying to help animals who needs care. It is also a
+                directory of animal shelters and adoption organizations across
+                various states in India.
               </p>
             </div>
           </div>
@@ -31,8 +31,8 @@ function Login() {
               <div className="flex justify-center mx-auto">
                 <img
                   className="w-auto h-7 sm:h-8"
-                  src="https://merakiui.com/images/logo.svg"
-                  alt=""
+                  src= {process.env.PUBLIC_URL + "/logo.png"}
+                  alt="Website Logo"
                 />
               </div>
 
@@ -67,12 +67,6 @@ function Login() {
                     >
                       Password
                     </label>
-                    <a
-                      href="#"
-                      className="text-sm text-gray-400 focus:text-blue-500 hover:text-blue-500 hover:underline"
-                    >
-                      Forgot password?
-                    </a>
                   </div>
 
                   <input

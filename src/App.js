@@ -1,16 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
-import Signup from './pages/Signup';
-import Ngo from './pages/Ngo';
+import Ngo from "./pages/Ngo";
+import Signup from "./pages/Signup";
+import { Route, Routes } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
     <div className="App">
-      <Login />
-      {/* <Signup/> */}
-      {/* <Personal/> */}
-      {/* <Ngo/> */}
+      <ToastContainer />
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/ngo" element={<Ngo />} />
+      </Routes>
     </div>
   );
 }
